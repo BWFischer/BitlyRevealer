@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className="center-container App-header">
         <header className="App-header">
-          <h1>BitlyView</h1>
+          <h1>BitlyRevealer</h1>
         </header>
         <main className="main-content">
           <img src={eyes} alt="Animated GIF" className="eyesSize" />
