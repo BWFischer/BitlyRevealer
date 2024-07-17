@@ -11,8 +11,8 @@ const UserForm = () => {
   const [result, setResult] = useState("");
   const [error, setError] = useState("");
   const [decodedUrl, setDecodedUrl] = useState("");
-  const [originalBitly, setOriginalBitly] = useState(""); // State to store original bit.ly path
-  const [status, setStatus] = useState(""); // State to store status from server
+  const [originalBitly, setOriginalBitly] = useState("");
+  const [status, setStatus] = useState("");
 
   const validationSchema = Yup.object().shape({
     path: Yup.string().required("The rest of the Bitly path is required"),
@@ -24,18 +24,18 @@ const UserForm = () => {
     setResult("");
     setError("");
     setDecodedUrl("");
-    setOriginalBitly(values.path); // Store original bit.ly path
+    setOriginalBitly(values.path);
 
     try {
       const bitlyUrl = `https://www.bit.ly/${values.path}`;
-      console.log("Testing URL:", bitlyUrl); // Log the URL before sending
+      console.log("Testing URL:", bitlyUrl);
 
       const response = await axios.get(`http://localhost:5000/decode?url=${encodeURIComponent(bitlyUrl)}`);
       console.log("Response:", response);
 
       const { originalUrl, status: responseStatus, message } = response.data;
 
-      setStatus(responseStatus); // Set status from server response
+      setStatus(responseStatus);
 
       if (responseStatus === "green") {
         console.log("Original URL (green):", originalUrl);

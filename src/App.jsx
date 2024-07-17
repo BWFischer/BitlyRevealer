@@ -1,7 +1,7 @@
 import React from "react";
 import UserForm from "./UserForm";
 import "./App.css";
-import eyes from "./eyes.gif"; // Corrected the path
+import eyes from "./eyes.gif";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
           <h1>BitlyView</h1>
         </header>
         <main className="main-content">
-          <img src={eyes} alt="Animated GIF" className="eyesSize" /> {/* Use the imported GIF */}
+          <img src={eyes} alt="Animated GIF" className="eyesSize" />
           <div className="form-container">
             <UserForm />
           </div>
