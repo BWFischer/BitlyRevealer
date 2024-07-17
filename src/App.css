@@ -1,0 +1,205 @@
+.eyesSize {
+  margin: 10px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 0; /* Remove bottom margin */
+  padding-top: 20px;
+  padding-bottom: 0; /* Remove bottom padding */
+}
+
+.copyright {
+  font-size: 0.4em; /* or adjust with specific size like '0.8em' */
+}
+
+.App-header {
+  background-color: #282c34;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: auto;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* App-specific styles */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+.center-container {
+  text-align: center;
+  /* max-width: 600px; */
+  width: 100%;
+  padding: 0 20px;
+}
+
+.form-container {
+  background-color: #282c34;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.result-container {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.error {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #f44336;
+  border-radius: 5px;
+  background-color: #282c34;
+}
+
+.error-message {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.error-message.yellow {
+  color: #ffc107; /* Yellow color */
+  /* Add any other necessary styling */
+
+  font-weight: bold;
+}
+
+.yellow .error-message {
+  color: yellow !important; /* Ensure yellow color is applied */
+  /* Add any other necessary styling */
+}
+
+/* UserForm component styles */
+.user-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  text-align: center;
+  width: 30%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  margin-top: 15px;
+  width: 30%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  animation: spin 1s linear infinite;
+}
+
+.status-message {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #282c34;
+}
+
+.result-label {
+  font-weight: bold;
+}
+
+.result-link {
+  text-decoration: none;
+  word-wrap: break-word;
+  max-width: 100%;
+  display: inline-block;
+  color: inherit;
+}
+
+.decoded-url {
+  margin-top: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.result-green {
+  color: green;
+}
+
+.spanTextColor {
+  color: white;
+}
+
+.result-red {
+  color: red;
+}

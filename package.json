@@ -1,0 +1,37 @@
+{
+  "name": "bitly-unveil",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env PORT=3000 react-scripts start",
+    "server": "node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "formik": "^2.4.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "reactstrap": "^10.0.1-release-v10.0.0-c659629.0",
+    "yup": "^1.4.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
