@@ -44,6 +44,7 @@ Bitly Revealer is a simple web application that allows users to decode shortened
     ```
 
 2. **Open your browser and go to** `http://localhost:3000` **to see the application in action.**
+3. **Make sure that you are running your node.js server on port 5000**
 
 ## Usage
 
